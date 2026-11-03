@@ -8,7 +8,7 @@ import time
 st.set_page_config(page_title="IELTS Listening Prep Master", page_icon="🎧", layout="wide")
 
 st.title("🎧 IELTS Listening Preparation App")
-st.caption("Intermediate Level (CEFR B2/B3) • Comprehensive Practice & Mock Tests")
+st.caption("Intermediate Level (CEFR B3) • Comprehensive Practice & Mock Tests")
 
 # Sidebar - Settings & Mode Selection
 st.sidebar.header("⚙️ Settings & Navigation")
