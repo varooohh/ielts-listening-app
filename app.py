@@ -786,7 +786,7 @@ YOUTUBE_PRACTICE_DATA = [
 # -----------------------------------------------------------------------------
 IELTS_MOCK_DATA = {
     "IELTS 6 - Test 1": {
-        "url": "https://www.youtube.com/watch?v=5Q_o_kZ92-o",
+        "url": "https://www.youtube.com/watch?v=8WyrVAGTFr8",
         "answers": {
             1: "Maketu", 2: "021 785 6361", 3: "22nd October", 4: "2", 5: "1.50",
             6: "market", 7: "2.00", 8: "4", 9: "2.40", 10: "post office",
@@ -799,7 +799,7 @@ IELTS_MOCK_DATA = {
         }
     },
     "IELTS 6 - Test 2": {
-        "url": "https://www.youtube.com/watch?v=r3R_5o1D8V0",
+        "url": "https://www.youtube.com/watch?v=LFQEDqY6L2k",
         "answers": {
             1: "central", 2: "600", 3: "2 years", 4: "garage", 5: "garden",
             6: "quiet", 7: "station", 8: "350", 9: "bills", 10: "1st September",
@@ -812,7 +812,7 @@ IELTS_MOCK_DATA = {
         }
     },
     "IELTS 6 - Test 3": {
-        "url": "https://www.youtube.com/watch?v=kR2M9L403Fw",
+        "url": "https://www.youtube.com/watch?v=YjTZYgn4CpQ",
         "answers": {
             1: "freelance", 2: "designer", 3: "website", 4: "portfolio", 5: "marketing",
             6: "contracts", 7: "deadline", 8: "invoices", 9: "client", 10: "insurance",
@@ -825,7 +825,7 @@ IELTS_MOCK_DATA = {
         }
     },
     "IELTS 6 - Test 4": {
-        "url": "https://www.youtube.com/watch?v=N9y7U100_jA",
+        "url": "https://www.youtube.com/watch?v=HuAsvjTx2Xk",
         "answers": {
             1: "museum", 2: "history", 3: "exhibition", 4: "guided tour", 5: "12.50",
             6: "student card", 7: "group discount", 8: "booklet", 9: "cafe", 10: "parking",
