@@ -8,14 +8,39 @@ import time
 st.set_page_config(page_title="IELTS B3 Upper-Intermediate Listening Prep", page_icon="🎧", layout="wide")
 
 st.title("🎧 IELTS Listening Prep: CEFR Level B3")
-st.subheader("Theme: Global Environmental & Sustainability Debates") 
-st.caption("Targeting Upper-Intermediate Listening Skills: Implied Meanings, Speaker Attitudes, & Academic Arguments")
+st.subheader("Targeting Upper-Intermediate Listening Skills: Implied Meanings, Speaker Attitudes, & Academic Arguments") 
 
-# Sidebar Navigation
+# -----------------------------------------------------------------------------
+# Sidebar Navigation & Gemini API Key Setup
+# -----------------------------------------------------------------------------
 st.sidebar.header("⚙️ Settings & Navigation")
-api_key = st.sidebar.text_input("Gemini API Key:", type="password", help="Enter key for AI evaluation & explanations")
-app_mode = st.sidebar.radio("Select Learning Mode:", ["B3 Video Practice (20+ Lessons)", "Full IELTS Mock Test Mode"])
 
+# Input Gemini API Key
+api_key = st.sidebar.text_input(
+    "Gemini API Key:",
+    type="password",
+    help="Enter key for AI diagnostic evaluation & explanations"
+)
+
+# Panduan Petunjuk Cara Mendapatkan API Key (Expander Rapi)
+with st.sidebar.expander("🔑 How to get a free Gemini API Key?"):
+    st.markdown("""
+    Follow these quick steps to generate your free API key:
+    
+    1. Open **[Google AI Studio](https://aistudio.google.com/)**.
+    2. Sign in with your Google account.
+    3. Click on **"Get API key"** on the left menu.
+    4. Click **"Create API key in new project"**.
+    5. Copy the generated key and paste it into the field above.
+    
+    *Note: The free tier provides instant diagnostic explanations without any charge.*
+    """)
+
+# Pilihan Mode Pembelajaran
+app_mode = st.sidebar.radio(
+    "Select Learning Mode:", 
+    ["B3 Video Practice (20+ Lessons)", "Full IELTS Mock Test Mode"]
+)
 # -----------------------------------------------------------------------------
 # 2. IELTS Band Score Calculator
 # -----------------------------------------------------------------------------
