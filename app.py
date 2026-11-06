@@ -434,36 +434,36 @@ YOUTUBE_PRACTICE_DATA = [
     {
         "id": 12,
         "category": "Authentic Podcast",
-        "title": "Lesson 12: Can Carbon Capture Technology Stop Global Warming?",
-        "url": "https://www.youtube.com/watch?v=Xh0Yp8G4bQI",
+        "title": "Lesson 12: A New Way to Remove CO2 from the Atmosphere",
+        "url": "https://www.youtube.com/watch?v=XY_lzonfE3I",
         "questions": [
             {
                 "type": "mcq",
-                "q": "1. What attitude do the podcast hosts exhibit towards carbon capture technology?",
-                "options": ["Pragmatic skepticism about its feasibility at scale", "Unconditional approval as a magic bullet", "Total rejection of atmospheric engineering"],
-                "ans": "Pragmatic skepticism about its feasibility at scale"
+                "q": "1. What attitude does the speaker express regarding direct air capture technology?",
+                "options": ["Pragmatic skepticism about scale", "Unconditional approval as a quick fix", "Complete rejection of carbon removal"],
+                "ans": "Pragmatic skepticism about scale"
             },
             {
                 "type": "short",
-                "q": "2. What geological location is commonly used to store captured industrial carbon?",
-                "ans": "Underground rock formations"
+                "q": "2. What gas is directly extracted from ambient air using chemical sorbents?",
+                "ans": "Carbon dioxide"
             },
             {
                 "type": "mcq",
-                "q": "3. What implied risk is associated with over-relying on carbon capture?",
-                "options": ["It may reduce the urgency to phase out fossil fuels", "It decreases global economic growth", "It causes immediate cooling of the oceans"],
-                "ans": "It may reduce the urgency to phase out fossil fuels"
+                "q": "3. What implied challenge is highlighted concerning industrial carbon capture?",
+                "options": ["High energy requirements and infrastructure investment", "Lack of atmospheric carbon", "Decreased ocean salinity"],
+                "ans": "High energy requirements and infrastructure investment"
             },
             {
                 "type": "short",
-                "q": "4. What is the primary financial barrier preventing widespread deployment of direct air capture?",
-                "ans": "High operational cost"
+                "q": "4. What subterranean geological storage medium is used to permanently lock away carbon?",
+                "ans": "Rock formations"
             },
             {
                 "type": "mcq",
-                "q": "5. What is the host's main conclusion regarding climate mitigation strategy?",
-                "options": ["Direct emission cuts must remain the primary priority", "Carbon capture can replace renewable energy", "Geoengineering requires no further regulation"],
-                "ans": "Direct emission cuts must remain the primary priority"
+                "q": "5. What is the speaker's main conclusion regarding climate policy?",
+                "options": ["Emissions reduction must remain the top priority alongside carbon removal", "Carbon capture makes renewable energy unnecessary", "Geoengineering requires no regulation"],
+                "ans": "Emissions reduction must remain the top priority alongside carbon removal"
             }
         ]
     },
@@ -506,36 +506,36 @@ YOUTUBE_PRACTICE_DATA = [
     {
         "id": 14,
         "category": "Academic Discussion",
-        "title": "Lesson 14: Desalination and the Future of Water Scarcity",
-        "url": "https://www.youtube.com/watch?v=P2143Q78c_I",
+        "title": "Lesson 14: Why Don't We Get Our Drinking Water from the Ocean?",
+        "url": "https://www.youtube.com/watch?v=jdOjB0j329g",
         "questions": [
             {
                 "type": "mcq",
-                "q": "1. What core scientific challenge of seawater desalination is discussed by the panel?",
-                "options": ["Extremely high energy consumption and environmental brine disposal", "Inability to remove ocean salt effectively", "Lack of seawater in arid coastal regions"],
-                "ans": "Extremely high energy consumption and environmental brine disposal"
+                "q": "1. What core scientific challenge of seawater desalination is discussed?",
+                "options": ["Extremely high energy requirements and brine byproduct management", "Inability to separate salt from water", "Scarcity of seawater"],
+                "ans": "Extremely high energy requirements and brine byproduct management"
             },
             {
                 "type": "short",
-                "q": "2. What dense, highly concentrated byproduct of desalination threatens marine life when discharged?",
+                "q": "2. What highly concentrated salty byproduct of desalination can harm marine ecosystems if released?",
                 "ans": "Brine"
             },
             {
                 "type": "mcq",
-                "q": "3. What implied perspective is shared regarding powering future desalination plants?",
-                "options": ["They must be powered by renewable energy to avoid worsening climate change", "They should rely on coal-fired power plants", "Energy consumption is not a concern"],
-                "ans": "They must be powered by renewable energy to avoid worsening climate change"
+                "q": "3. What implied perspective is shared about powering future desalination plants?",
+                "options": ["They must be powered by renewable energy to avoid worsening carbon emissions", "They should rely exclusively on fossil fuels", "Energy consumption is negligible"],
+                "ans": "They must be powered by renewable energy to avoid worsening carbon emissions"
             },
             {
                 "type": "short",
-                "q": "4. What specific technology uses semi-permeable membranes to filter ocean salt?",
+                "q": "4. What membrane filtration process is most commonly used in modern desalination?",
                 "ans": "Reverse osmosis"
             },
             {
                 "type": "mcq",
-                "q": "5. What is the speaker's main recommendation for managing global water stress?",
-                "options": ["Combining technological innovation with strict urban water conservation", "Relying solely on groundwater extraction", "Ignoring industrial agricultural waste"],
-                "ans": "Combining technological innovation with strict urban water conservation"
+                "q": "5. What key conclusion is drawn regarding global water conservation?",
+                "options": ["Technological innovation must be paired with strict water management", "Ocean desalination solves all global water shortages effortlessly", "Groundwater reserves are unlimited"],
+                "ans": "Technological innovation must be paired with strict water management"
             }
         ]
     },
@@ -650,108 +650,108 @@ YOUTUBE_PRACTICE_DATA = [
     {
         "id": 18,
         "category": "Economic & Policy Debate",
-        "title": "Lesson 18: Carbon Tax vs. Cap-and-Trade Markets",
-        "url": "https://www.youtube.com/watch?v=J_Bh40S_b2s",
+        "title": "Lesson 18: Innovating to Zero Emissions and Carbon Pricing",
+        "url": "https://www.youtube.com/watch?v=JaF-fq2Zn7I",
         "questions": [
             {
                 "type": "mcq",
-                "q": "1. What main argument is put forward by proponents of a direct carbon tax?",
-                "options": ["It provides price certainty and incentivizes clean energy investment", "It eliminates all government regulation", "It guarantees exact emission limits"],
-                "ans": "It provides price certainty and incentivizes clean energy investment"
+                "q": "1. What core mathematical formula does the speaker use to explain global CO2 emissions?",
+                "options": ["Multiplying population, services, energy per service, and CO2 per energy unit", "Adding global GDP to industrial output", "Subtracting renewable energy from total power"],
+                "ans": "Multiplying population, services, energy per service, and CO2 per energy unit"
             },
             {
                 "type": "short",
-                "q": "2. What market mechanism sets a hard ceiling on total industrial greenhouse gas emissions?",
-                "ans": "Cap-and-trade"
+                "q": "2. What target number for global carbon emissions does the speaker argue humanity must reach?",
+                "ans": "Zero"
             },
             {
                 "type": "mcq",
-                "q": "3. What implied weakness of carbon offset credits is criticized by environmental economists?",
-                "options": ["Offsets can be manipulated without reducing real-world pollution", "Offsets are too expensive for corporations", "Offsets are strictly verified by independent auditors"],
-                "ans": "Offsets can be manipulated without reducing real-world pollution"
+                "q": "3. What implied stance is taken regarding energy innovation in developing countries?",
+                "options": ["Clean energy must become cheap enough for all nations to adopt", "Developing nations should halt economic growth", "Fossil fuels should be permanently subsidized"],
+                "ans": "Clean energy must become cheap enough for all nations to adopt"
             },
             {
                 "type": "short",
-                "q": "4. What financial penalty is levied per ton of carbon emitted under a tax policy?",
-                "ans": "Carbon tax"
+                "q": "4. What innovative clean energy technology does the speaker highlight as a baseline power option?",
+                "ans": "Nuclear power"
             },
             {
                 "type": "mcq",
-                "q": "5. How would you summarize the conclusion of the policy debate?",
-                "options": ["Both instruments require strong regulatory oversight to be effective", "Cap-and-trade has completely failed everywhere", "Carbon taxation harms economic growth without benefit"],
-                "ans": "Both instruments require strong regulatory oversight to be effective"
+                "q": "5. How would you summarize the speaker's tone throughout the presentation?",
+                "options": ["Analytical, pragmatic, and urgency-driven", "Sensational and alarmist", "Indifferent to economic realities"],
+                "ans": "Analytical, pragmatic, and urgency-driven"
             }
         ]
     },
     {
         "id": 19,
         "category": "Academic Discussion",
-        "title": "Lesson 19: Sustainable Urban Transportation Architecture",
-        "url": "https://www.youtube.com/watch?v=fmt8t9KkM4U",
+        "title": "Lesson 19: Urbanization and the Future of Sustainable Cities",
+        "url": "https://www.youtube.com/watch?v=fKnAJCSGSdk",
         "questions": [
             {
                 "type": "mcq",
-                "q": "1. What core urban design shift is advocated by the university panel?",
-                "options": ["Transitioning from car-centric planning to pedestrian and transit-oriented development", "Building wider highways for commuters", "Subsidizing private luxury vehicles"],
-                "ans": "Transitioning from car-centric planning to pedestrian and transit-oriented development"
+                "q": "1. What major urban design challenge is highlighted by the speaker?",
+                "options": ["Rapid population growth overwhelming city infrastructure and resource systems", "Decrease in urban migration", "Excessive agricultural land in city centers"],
+                "ans": "Rapid population growth overwhelming city infrastructure and resource systems"
             },
             {
                 "type": "short",
-                "q": "2. What concept describes cities designed so daily amenities are accessible within a short walk?",
-                "ans": "15-minute city"
+                "q": "2. What phenomenon occurs when urban areas trap heat significantly more than rural surroundings?",
+                "ans": "Urban heat island"
             },
             {
                 "type": "mcq",
-                "q": "3. What can be inferred about the speaker's evaluation of high-speed rail networks?",
-                "options": ["They effectively replace short-haul regional flights and reduce emissions", "They are economically impractical for modern nations", "They increase urban traffic congestion"],
-                "ans": "They effectively replace short-haul regional flights and reduce emissions"
+                "q": "3. What can be inferred about the speaker's view on public transportation networks?",
+                "options": ["Efficient mass transit is vital to reduce urban carbon footprints and traffic", "Private cars should remain the dominant urban transport", "Cities require no centralized transport planning"],
+                "ans": "Efficient mass transit is vital to reduce urban carbon footprints and traffic"
             },
             {
                 "type": "short",
-                "q": "4. What dedicated lane system speeds up urban bus transit times?",
-                "ans": "Bus rapid transit"
+                "q": "4. What architectural practice incorporates plants and vegetation onto building rooftops?",
+                "ans": "Green roofs"
             },
             {
                 "type": "mcq",
-                "q": "5. What speaker perspective is expressed regarding bike infrastructure?",
-                "options": ["Protected bike lanes significantly boost public safety and lower emissions", "Cycling infrastructure is only for recreational parks", "Bikes cause traffic delays"],
-                "ans": "Protected bike lanes significantly boost public safety and lower emissions"
+                "q": "5. What overall recommendation is presented for sustainable urban planning?",
+                "options": ["Designing compact, walkable, and energy-efficient urban centers", "Expanding suburban sprawl indefinitely", "Abandoning urban centers for rural living"],
+                "ans": "Designing compact, walkable, and energy-efficient urban centers"
             }
         ]
     },
     {
         "id": 20,
         "category": "Scientific Documentary",
-        "title": "Lesson 20: Glacial Melting and Rising Sea Levels",
-        "url": "https://www.youtube.com/watch?v=vp3bgraHkSY",
+        "title": "Lesson 20: Extreme Ice Loss and Glacial Retreat",
+        "url": "https://www.youtube.com/watch?v=yTDdY1UG7ug",
         "questions": [
             {
                 "type": "mcq",
-                "q": "1. What major climate feedback loop is explained regarding polar ice loss?",
-                "options": ["Melting ice reduces Earth's albedo, absorbing more solar heat", "Ice loss cools ocean currents rapidly", "Glaciers absorb excess greenhouse gases"],
-                "ans": "Melting ice reduces Earth's albedo, absorbing more solar heat"
+                "q": "1. What visual evidence does the presenter use to document global glacier loss?",
+                "options": ["Multi-year time-lapse photography from arctic monitoring stations", "Satellite drawings", "Computer-generated animations"],
+                "ans": "Multi-year time-lapse photography from arctic monitoring stations"
             },
             {
                 "type": "short",
-                "q": "2. What scientific term describes the reflectivity of Earth's ice surfaces?",
-                "ans": "Albedo"
+                "q": "2. What term describes the dramatic breaking off of massive ice blocks from glaciers into the sea?",
+                "ans": "Calving"
             },
             {
                 "type": "mcq",
-                "q": "3. What attitude does the narrator project regarding coastal vulnerability?",
-                "options": ["Serious concern for millions of residents in low-lying coastal cities", "Reassurance that sea level rise is negligible", "Skepticism toward satellite measurements"],
-                "ans": "Serious concern for millions of residents in low-lying coastal cities"
+                "q": "3. What attitude does the speaker project regarding the rate of ice melt?",
+                "options": ["Alarmed by the unprecedented speed of glacial retreat", "Reassured that ice loss is cyclical and minor", "Indifferent to polar changes"],
+                "ans": "Alarmed by the unprecedented speed of glacial retreat"
             },
             {
                 "type": "short",
-                "q": "4. What massive ice sheet in the Southern Hemisphere contains the majority of Earth's fresh water?",
-                "ans": "Antarctica"
+                "q": "4. What major global risk is directly triggered by melted continental ice sheets entering the oceans?",
+                "ans": "Sea level rise"
             },
             {
                 "type": "mcq",
-                "q": "5. What underlying conclusion is emphasized in the documentary finale?",
-                "options": ["Immediate global decarbonization is essential to prevent catastrophic sea level rise", "Human relocation is the only solution", "Glacial retreat will naturally reverse"],
-                "ans": "Immediate global decarbonization is essential to prevent catastrophic sea level rise"
+                "q": "5. What underlying message is emphasized in the presentation's conclusion?",
+                "options": ["Glacial loss is tangible proof of rapid climate change requiring urgent action", "Glaciers will naturally rebuild over the next decade", "Human activity plays no role in arctic melting"],
+                "ans": "Glacial loss is tangible proof of rapid climate change requiring urgent action"
             }
         ]
     }
