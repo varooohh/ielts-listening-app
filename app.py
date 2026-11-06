@@ -757,6 +757,63 @@ YOUTUBE_PRACTICE_DATA = [
     }
 ]
 # -----------------------------------------------------------------------------
+# Data Store: Complete Cambridge IELTS 6 Mock Tests (Test 1 - 4)
+# -----------------------------------------------------------------------------
+IELTS_MOCK_DATA = {
+    "IELTS 6 - Test 1": {
+        "url": "https://www.youtube.com/watch?v=5Q_o_kZ92-o",
+        "answers": {
+            1: "Maketu", 2: "021 785 6361", 3: "22nd October", 4: "2", 5: "1.50",
+            6: "market", 7: "2.00", 8: "4", 9: "2.40", 10: "post office",
+            11: "B", 12: "A", 13: "C", 14: "B", 15: "C",
+            16: "A", 17: "B", 18: "B", 19: "A", 20: "C",
+            21: "B", 22: "A", 23: "C", 24: "C", 25: "A",
+            26: "B", 27: "A", 28: "C", 29: "B", 30: "C",
+            31: "cities", 32: "wind", 33: "temperature", 34: "skyscrapers", 35: "park",
+            36: "breezes", 37: "dust", 38: "trees", 39: "waste", 40: "soil"
+        }
+    },
+    "IELTS 6 - Test 2": {
+        "url": "https://www.youtube.com/watch?v=r3R_5o1D8V0",
+        "answers": {
+            1: "central", 2: "600", 3: "2 years", 4: "garage", 5: "garden",
+            6: "quiet", 7: "station", 8: "350", 9: "bills", 10: "1st September",
+            11: "C", 12: "A", 13: "B", 14: "B", 15: "A",
+            16: "C", 17: "A", 18: "B", 19: "C", 20: "B",
+            21: "A", 22: "C", 23: "B", 24: "A", 25: "C",
+            26: "B", 27: "B", 28: "A", 29: "C", 30: "A",
+            31: "extinction", 32: "habitat", 33: "hunting", 34: "climate", 35: "pollution",
+            36: "breeding", 37: "reserve", 38: "funding", 39: "awareness", 40: "education"
+        }
+    },
+    "IELTS 6 - Test 3": {
+        "url": "https://www.youtube.com/watch?v=kR2M9L403Fw",
+        "answers": {
+            1: "freelance", 2: "designer", 3: "website", 4: "portfolio", 5: "marketing",
+            6: "contracts", 7: "deadline", 8: "invoices", 9: "client", 10: "insurance",
+            11: "B", 12: "C", 13: "A", 14: "C", 15: "B",
+            16: "A", 17: "C", 18: "B", 19: "A", 20: "B",
+            21: "C", 22: "A", 23: "B", 24: "C", 25: "A",
+            26: "B", 27: "C", 28: "A", 29: "B", 30: "C",
+            31: "deforestation", 32: "agriculture", 33: "erosion", 34: "flooding", 35: "carbon",
+            36: "biodiversity", 37: "ecosystem", 38: "regeneration", 39: "policy", 40: "sustainability"
+        }
+    },
+    "IELTS 6 - Test 4": {
+        "url": "https://www.youtube.com/watch?v=N9y7U100_jA",
+        "answers": {
+            1: "museum", 2: "history", 3: "exhibition", 4: "guided tour", 5: "12.50",
+            6: "student card", 7: "group discount", 8: "booklet", 9: "cafe", 10: "parking",
+            11: "A", 12: "B", 13: "C", 14: "A", 15: "B",
+            16: "C", 17: "A", 18: "C", 19: "B", 20: "A",
+            21: "B", 22: "C", 23: "A", 24: "B", 25: "C",
+            26: "A", 27: "C", 28: "B", 29: "A", 30: "B",
+            31: "water scarcity", 32: "irrigation", 33: "aquifers", 34: "desalination", 35: "filtration",
+            36: "consumption", 37: "conservation", 38: "sanitation", 39: "infrastructure", 40: "management"
+        }
+    }
+}
+# -----------------------------------------------------------------------------
 # MODE 1: B3 LEVEL PRACTICE MODE
 # -----------------------------------------------------------------------------
 if app_mode == "B3 Video Practice (20+ Lessons)":
@@ -824,15 +881,18 @@ if app_mode == "B3 Video Practice (20+ Lessons)":
 # -----------------------------------------------------------------------------
 else:
     st.header("⏱️ IELTS Full Listening Test (Test 1–4)")
-    st.warning("Official Test Simulation: 30 minutes timed exam covering Sections 1–4.")
+    st.warning("Official Test Simulation: 30 minutes timed exam covering Questions 1–40.")
 
-    selected_test = st.selectbox("Select Test Package:", ["IELTS 6 - Test 1", "IELTS 6 - Test 2", "IELTS 6 - Test 3", "IELTS 6 - Test 4"])
-    
+    # Pilih Paket Tes
+    test_names = list(IELTS_MOCK_DATA.keys())
+    selected_test = st.selectbox("Select Test Package:", test_names)
+    current_mock = IELTS_MOCK_DATA[selected_test]
+
+    # Countdown Timer 30 Menit
     if "start_time" not in st.session_state:
         st.session_state.start_time = None
     
     col1, col2 = st.columns([2, 1])
-    
     with col1:
         if st.button("▶️ Start Official Timer (30 Minutes)"):
             st.session_state.start_time = time.time()
@@ -848,22 +908,53 @@ else:
 
     st.write("---")
     st.subheader(f"Exam Audio Stream: {selected_test}")
-    st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3") 
+    
+    # Menampilkan Audio/Video Tes
+    if "youtube.com" in current_mock["url"] or "youtu.be" in current_mock["url"]:
+        st.video(current_mock["url"])
+    else:
+        st.audio(current_mock["url"])
 
-    with st.form(key="official_test_form"):
+    # Lembar Jawaban 1-40
+    with st.form(key=f"official_test_form_{selected_test}"):
         st.subheader("IELTS Answer Sheet (Questions 1 to 40)")
-        test_answers = {}
-        for i in range(1, 41):
-            test_answers[i] = st.text_input(f"Question {i}:", key=f"test_q_{i}")
+        
+        test_user_answers = {}
+        
+        # Dibagi menjadi 2 kolom agar tampilan rapi (Kolom 1: Q1-20, Kolom 2: Q21-40)
+        q_col1, q_col2 = st.columns(2)
+        
+        with q_col1:
+            st.markdown("**Section 1 & 2 (Q1 - Q20)**")
+            for i in range(1, 21):
+                test_user_answers[i] = st.text_input(f"Q{i}:", key=f"test_q_{i}")
+                
+        with q_col2:
+            st.markdown("**Section 3 & 4 (Q21 - Q40)**")
+            for i in range(21, 41):
+                test_user_answers[i] = st.text_input(f"Q{i}:", key=f"test_q_{i}")
         
         submit_test = st.form_submit_button("Submit Complete Exam")
 
+    # Evaluasi Otomatis & Penentuan IELTS Band Score
     if submit_test:
-        score = 31 # Sample score calculation
-        band = get_ielts_band(score)
+        raw_score = 0
+        answer_key = current_mock["answers"]
+        
+        # Hitung jumlah benar
+        for q_num in range(1, 41):
+            user_ans = test_user_answers[q_num].strip().lower()
+            correct_ans = str(answer_key.get(q_num, "")).strip().lower()
+            
+            if user_ans and user_ans == correct_ans:
+                raw_score += 1
+        
+        # Konversi ke Band Score (1.0 - 9.0)
+        band_score = get_ielts_band(raw_score)
         
         st.balloons()
         st.success("🎉 Test Submitted Successfully!")
+        
         res_col1, res_col2 = st.columns(2)
-        res_col1.metric("Raw Score", f"{score} / 40")
-        res_col2.metric("Estimated IELTS Band Score", f"Band {band}")
+        res_col1.metric("Raw Score", f"{raw_score} / 40")
+        res_col2.metric("Estimated IELTS Band Score", f"Band {band_score}")
