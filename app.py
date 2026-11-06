@@ -214,9 +214,8 @@ YOUTUBE_PRACTICE_DATA = [
                 "ans": "Reducing consumption and repairing old devices"
             }
         ]
-    }
-]
-{
+    },
+    {
         "id": 6,
         "category": "Academic Discussion",
         "title": "Lesson 6: Changing the Earth's Climate - Geoengineering Solutions",
@@ -277,7 +276,7 @@ YOUTUBE_PRACTICE_DATA = [
             },
             {
                 "type": "short",
-                "q": "3. What key lifestyle change is suggested to reduce individual ecological impacts?",
+                "q": "4. What key lifestyle change is suggested to reduce individual ecological impacts?",
                 "ans": "Reducing meat consumption"
             },
             {
@@ -395,8 +394,8 @@ YOUTUBE_PRACTICE_DATA = [
                 "ans": "Turning waste into currency prevents it from ever reaching the ocean"
             }
         ]
-    }
-{
+    },
+    {
         "id": 11,
         "category": "Environmental Discussion",
         "title": "Lesson 11: The Environmental Cost of Fast Fashion",
@@ -575,8 +574,8 @@ YOUTUBE_PRACTICE_DATA = [
                 "ans": "Protecting indigenous territories is essential for effective forest conservation"
             }
         ]
-    }
-{
+    },
+    {
         "id": 16,
         "category": "Environmental Discussion",
         "title": "Lesson 16: Biodiversity Loss and Ecosystem Collapse",
@@ -709,7 +708,7 @@ YOUTUBE_PRACTICE_DATA = [
             },
             {
                 "type": "short",
-                "q": "3. What dedicated lane system speeds up urban bus transit times?",
+                "q": "4. What dedicated lane system speeds up urban bus transit times?",
                 "ans": "Bus rapid transit"
             },
             {
