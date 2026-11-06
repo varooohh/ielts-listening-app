@@ -39,7 +39,11 @@ with st.sidebar.expander("🔑 How to get a free Gemini API Key?"):
 # Pilihan Mode Pembelajaran
 app_mode = st.sidebar.radio(
     "Select Learning Mode:", 
-    ["B3 Video Practice (20+ Lessons)", "Full IELTS Mock Test Mode"]
+    [
+        "Tips, Strategies & Question Types"
+        "B3 Video Practice (20+ Lessons)", 
+        "Full IELTS Mock Test Mode",
+    ]
 )
 # -----------------------------------------------------------------------------
 # 2. IELTS Band Score Calculator
@@ -839,7 +843,123 @@ IELTS_MOCK_DATA = {
     }
 }
 # -----------------------------------------------------------------------------
-# MODE 1: B3 LEVEL PRACTICE MODE
+# MODE 3: TIPS, STRATEGIES & QUESTION TYPES (Card Grid Layout)
+# -----------------------------------------------------------------------------
+elif app_mode == "Tips, Strategies & Question Types":
+    st.title("💡 Tips, Strategies & Question Types")
+    st.markdown("""
+    All eleven official IELTS Listening question types. Each guide explains what the task looks like, 
+    the routine to follow, the traps built into it — and ends with a targeted drill.
+    """)
+
+    # Data 11 Tipe Soal Resmi IELTS Listening
+    QUESTION_TYPES = [
+        {
+            "type_no": "TYPE 01",
+            "icon": "🎯",
+            "title": "Multiple Choice — one answer",
+            "desc": "Three options, one truth. The other two are built from words you will hear as distractors.",
+            "drill": "10-question drill"
+        },
+        {
+            "type_no": "TYPE 02",
+            "icon": "☑️",
+            "title": "Multiple Choice — more than one answer",
+            "desc": "Two marks, five options. One list you must narrow down before listening carefully.",
+            "drill": "10-question drill"
+        },
+        {
+            "type_no": "TYPE 03",
+            "icon": "⇄",
+            "title": "Matching",
+            "desc": "A list of options matched against a series of questions in one passing audio recording.",
+            "drill": "10-question drill"
+        },
+        {
+            "type_no": "TYPE 04",
+            "icon": "📋",
+            "title": "Form Completion",
+            "desc": "Names, numbers, prices, and dates — factual details that must be written with exact spelling.",
+            "drill": "10-question drill"
+        },
+        {
+            "type_no": "TYPE 05",
+            "icon": "✏️",
+            "title": "Note Completion",
+            "desc": "Bullet points summarizing key lecture details with a maximum word count limit per blank.",
+            "drill": "10-question drill"
+        },
+        {
+            "type_no": "TYPE 06",
+            "icon": "📊",
+            "title": "Table Completion",
+            "desc": "Rows and columns categorizing information. Read across and down before listening.",
+            "drill": "10-question drill"
+        },
+        {
+            "type_no": "TYPE 07",
+            "icon": "🔀",
+            "title": "Flow-chart Completion",
+            "desc": "A process step-by-step in sequential order. Each box is one stage in the chain.",
+            "drill": "10-question drill"
+        },
+        {
+            "type_no": "TYPE 08",
+            "icon": "¶",
+            "title": "Summary Completion",
+            "desc": "A connected paragraph summarizing the talk — sentence grammar is your best guide.",
+            "drill": "10-question drill"
+        },
+        {
+            "type_no": "TYPE 09",
+            "icon": "🔤",
+            "title": "Sentence Completion",
+            "desc": "Fill in missing information in incomplete sentences while staying strictly under word limits.",
+            "drill": "10-question drill"
+        },
+        {
+            "type_no": "TYPE 10",
+            "icon": "🗺️",
+            "title": "Plan / Map / Diagram Labelling",
+            "desc": "Spatial language decides everything: opposite, adjacent, beyond, turn left, or at the rear.",
+            "drill": "10-question drill"
+        },
+        {
+            "type_no": "TYPE 11",
+            "icon": "❓",
+            "title": "Short-answer Questions",
+            "desc": "Factual answers directly from the audio — word limit compliance is the critical key.",
+            "drill": "10-question drill"
+        }
+    ]
+# -----------------------------------------------------------------------------
+# MODE 1: TIPS, STRATEGIES & QUESTION TYPES (Card Grid Layout)
+# -----------------------------------------------------------------------------
+    # Render Grid Kartu (3 Kolom per Baris)
+    cols_per_row = 3
+    for i in range(0, len(QUESTION_TYPES), cols_per_row):
+        cols = st.columns(cols_per_row)
+        for j, item in enumerate(QUESTION_TYPES[i:i+cols_per_row]):
+            with cols[j]:
+                # Membuat kontainer berbingkai mirip kartu pada gambar
+                with st.container(border=True):
+                    # Header Kartu: Icon & TYPE NO
+                    head_col1, head_col2 = st.columns([1, 4])
+                    with head_col1:
+                        st.subheader(item["icon"])
+                    with head_col2:
+                        st.caption(f"**{item['type_no']}**")
+                    
+                    # Judul & Deskripsi Tipe Soal
+                    st.markdown(f"### {item['title']}")
+                    st.write(item["desc"])
+                    st.write("---")
+                    
+                    # Tombol Latihan Drill
+                    if st.button(f"Start {item['drill']} →", key=f"btn_drill_{item['type_no']}"):
+                        st.info(f"Opening practice drill for {item['title']}...")
+# -----------------------------------------------------------------------------
+# MODE 2: B3 LEVEL PRACTICE MODE
 # -----------------------------------------------------------------------------
 if app_mode == "B3 Video Practice (20+ Lessons)":
     st.header("📺 Level B3 Authentic Video Practice")
@@ -902,7 +1022,7 @@ if app_mode == "B3 Video Practice (20+ Lessons)":
         st.metric("Section Score", f"{correct_count} / {len(current_data['questions'])}")
 
 # -----------------------------------------------------------------------------
-# MODE 2: FULL IELTS MOCK TEST MODE (With Countdown Timer & Band Score)
+# MODE 3: FULL IELTS MOCK TEST MODE (With Countdown Timer & Band Score)
 # -----------------------------------------------------------------------------
 else:
     st.header("⏱️ IELTS Full Listening Test (Test 1–4)")
